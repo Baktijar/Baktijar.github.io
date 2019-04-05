@@ -85,3 +85,31 @@ linkMailto.addEventListener("click", function() {
   console.log(linkMailto.href);
 });
 console.log(linkMailto.href);
+
+var highlight = false;
+var cover = null;
+function backdrop(element) {
+  if (highlight == false) {
+    /*Create a transparent cover for the viewport*/
+    cover = document.createElement("div");
+    cover.style.height = "100%";
+    cover.style.width = "100%";
+    cover.style.backgroundColor = "black";
+    cover.style.opacity = "0.8";
+    cover.style.position = "fixed";
+    cover.style.top = "0px";
+    cover.style.left = "0px";
+    cover.style.zIndex = "1";
+
+    document.body.appendChild(cover);
+
+    /*Element has to be positioned so that we can apply z-index css property on it.*/
+    element.style.position = "relative";
+    element.style.zIndex = "2";
+    highlight = true;
+  } else {
+    document.body.removeChild(cover);
+    highlight = false;
+    element.style.zIndex = "0";
+  }
+}
