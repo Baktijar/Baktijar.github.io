@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll(".header nav ul li a");
 const articles = document.querySelectorAll(".content");
 
 let activeLink = navLinks[0]; // Home
