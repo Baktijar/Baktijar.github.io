@@ -81,7 +81,7 @@ section.content ul {
 footer {
   background: linear-gradient(to right, #3c3b3f, #605c3c);
   padding: 20px;
-
+padding-bottom: 100px;
   color: white;
   margin-top: 100px;
 }
@@ -208,16 +208,6 @@ article.about {
   width: 400px;
   border-radius: 30px;
 }
-.profile {
-  width: 300px;
-  height: 100px;
-}
-
-.profile img {
-  border-radius: 15px;
-  width: 200px;
-  height: 100px;
-}
 
 .video {
   margin: 0;
@@ -313,10 +303,7 @@ img {
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+
 
 /* Next & previous buttons */
 .prev,
@@ -349,7 +336,7 @@ img {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -383,34 +370,6 @@ img {
 .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -446,3 +405,5 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+  
+
